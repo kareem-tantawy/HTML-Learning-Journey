@@ -11,6 +11,7 @@
     <h1>Form</h1>
     <div>
         <form action="" method="POST">
+            <input type="hidden" value="To be sent with user data">
             <div>
                 <label>Email</label>
                 <input type="email" required placeholder="example@example.com" name="uEmail">
@@ -26,6 +27,19 @@
                 <input type="password" required placeholder="More than 8 charcters" name="uPass">
             </div>
             <div>
+                <label>Color</label>
+                <input type="color" name="Color">
+            </div>
+            <div>
+                <label>Range</label>
+                 <input type="range" name="Range" min="0" max="10" step="1" value="5">
+            </div>
+            <div>
+                <label>Number</label>
+                <input type="number" name="number" min="0" max="100" step="5" value="25">
+            </div>
+            <div>
+                <input type="reset" value="Reset">
                 <input type="submit" value="Save">
             </div>
 
