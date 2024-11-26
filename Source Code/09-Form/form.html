@@ -13,34 +13,67 @@
         <form action="" method="POST">
             <input type="hidden" value="To be sent with user data">
             <div>
-                <label>Email</label>
-                <input type="email" required placeholder="example@example.com" name="uEmail">
+                <label for="uname">Username</label>
+                <input id="uname" required placeholder="Username" name="uName" autofocus />
             </div>
             <br>
             <div>
-                <label>Username</label>
-                <input required placeholder="Username" name="uName">
+                <label for="uemail">Email</label>
+                <input id="uemail" type="email" required placeholder="example@example.com" name="uEmail" />
             </div>
             <br>
             <div>
-                <label>Password</label>
-                <input type="password" required placeholder="More than 8 charcters" name="uPass">
+                <label for="upass">Password</label>
+                <input id="upass" type="password" required placeholder="More than 8 charcters" name="uPass"
+                    minlength="8" maxlength="32" />
+            </div>
+            <br>
+            <div>
+                <label for="subj">Subject</label>
+                <input id="subj" type="text" value="Back-end" disabled />
+                <br>
             </div>
             <div>
-                <label>Color</label>
-                <input type="color" name="Color">
+                <label for="color">Color</label>
+                <input id="color" type="color" name="Color" />
             </div>
             <div>
-                <label>Range</label>
-                 <input type="range" name="Range" min="0" max="10" step="1" value="5">
+                <label for="ran">Range</label>
+                <input id="ran" type="range" name="Range" min="0" max="10" step="1" value="5" />
             </div>
             <div>
-                <label>Number</label>
-                <input type="number" name="number" min="0" max="100" step="5" value="25">
+                <label for="num">Number</label>
+                <input id="num" type="number" name="number" min="0" max="100" step="5" value="25" />
             </div>
             <div>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Save">
+                <input id="win" type="radio" name="os" value="Windows" />
+                <label for="win">Windows</label>
+            </div>
+            <div>
+                <input id="linux" type="radio" name="os" value="Linux" />
+                <label for="linux">Linux</label>
+            </div>
+            <div>
+                <input id="mac" type="radio" name="os" value="Mac" />
+                <label for="mac">Mac</label>
+            </div>
+            <br>
+            <div>
+                <input id="win1" type="checkbox" name="os" value="Windows" />
+                <label for="win1">Windows</label>
+            </div>
+            <div>
+                <input id="linux1" type="checkbox" name="os" value="Linux" />
+                <label for="linux1">Linux</label>
+            </div>
+            <div>
+                <input id="mac1" type="checkbox" name="os" value="Mac" />
+                <label for="mac1">Mac</label>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Save" />
             </div>
 
         </form>
